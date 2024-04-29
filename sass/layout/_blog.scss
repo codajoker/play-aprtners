@@ -1,0 +1,82 @@
+.blog {
+    padding-top: 0;
+    padding-bottom: 0;
+    &__pos-container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__view-link {
+        display: inline-flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+        padding: 16px 32px;
+        gap: 10px;
+        border-radius: 32px;
+        border: 1px solid $main-icon-color;
+        @include font(18px, 600, 18px);
+        text-transform: uppercase;
+        @include transition;
+        margin-bottom: 60px;
+        &:hover,
+        &:focus {
+            opacity: 70%;
+        }
+        &:hover svg,
+        &:focus svg {
+            rotate: 0deg;
+        }
+        @include min-width('mac') {
+            order: 2;
+            width: auto;
+            margin: 0 auto;
+        }
+        &__icon {
+        @include transition;
+            rotate: 45deg;
+            fill: $main-icon-color;
+        }
+    }
+    &-list {
+        @include min-width('mac') {
+            margin-bottom: 40px;
+        }
+    }
+    &__section-two {
+        padding-bottom: 30px;
+        @include min-width('mac') {
+            padding-bottom: 100px;
+        }
+    }
+}
+
+.blog__view-wrap-icon {
+    margin-top: auto;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+}
+
+.read-more__link {
+    @include transition;
+    
+    &:hover,
+    &:focus {
+        background-color: $bgd-color-hover;
+        opacity: 70%;
+    }
+
+    &:hover svg,
+    &:focus svg {
+        rotate: 0deg;
+        opacity: 70%;
+    }
+}
+
+.read-more__icon {
+    @include transition;
+}

@@ -1,0 +1,32 @@
+.privacy {
+    &__section {
+        padding-bottom: 32px;
+        &--twopixels {
+            padding-bottom: 30px;
+        }
+    }
+    &__pretitle {
+        margin-bottom: -20px;
+    }
+    &__sub-pretitle {
+        @include font(15px, 500, 15px);
+        opacity: 0.5;
+        align-self: stretch;
+        &--link {
+            text-decoration: underline;
+        }
+    }
+
+    &__secondary-title {
+        @include font(21px, 600, 21px);
+        align-self: stretch;
+        margin-bottom: -10px;
+    }
+}
+
+.tracking-echnologies {
+    &__list {
+        padding-left: 20px;
+        list-style: outside;
+    }
+}

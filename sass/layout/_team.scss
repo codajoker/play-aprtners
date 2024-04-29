@@ -1,0 +1,92 @@
+.team {
+    padding-top: 0;
+    padding-bottom: 60px;
+    background-image: url(/images/team/bgd/bg-gradient-team.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+
+    &__title {
+        @include font(36px, 600, 36px);
+        text-transform: uppercase;
+        margin-right: auto;
+        margin-bottom: 24px;
+        @include min-width('mac') {
+            @include font(48px, 600, 48px);
+            margin-bottom: 40px;
+        }
+    }
+
+    &__list {
+        margin-bottom: 24px;
+
+        @include min-width('mac') {
+            margin-bottom: 40px;
+        }
+
+        &-item {
+            width: 328px;
+            position: relative;
+            border-radius: 24px;
+            @include min-width('mac') {
+                width: 338px;
+            }
+        }
+
+        &-img {
+            max-width: 328px;
+            margin: 0 auto;
+            border-radius: 24px;
+            @include min-width('mac') {
+                max-width: 338px;
+            }
+        }
+
+        &-name {
+            @include font(43.385px, 600, 33.588px);
+        }
+
+        &-position {
+            @include font(20px, 400, 22px);
+            margin-bottom: 8px;
+        }
+
+        &-social {
+            @include flexcenter;
+            gap: 16px;
+            margin-bottom: 8px;
+
+            @include min-width('mac') {}
+        }
+
+        &-link {
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            @include transition(opacity);
+
+            &:hover svg,
+            &:focus svg {
+                opacity: 70%;
+            }
+
+            @include min-width('mac') {}
+        }
+
+        &-language {
+            @include font(18px, 600, 18px);
+        }
+    }
+
+}
+
+.team__list-wrap__text {
+    position: absolute;
+    width: 100%;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include flexcenter;
+    flex-direction: column;
+    gap: 8px;
+}

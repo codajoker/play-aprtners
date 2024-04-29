@@ -1,0 +1,80 @@
+.catalog-news {
+    &--padding {
+        @include min-width('mac') {
+            padding-bottom: 110px;
+        }
+    }
+    &__list {
+        @include flexcenter;
+        flex-direction: column;
+        gap: 7px;
+        @include min-width('mac') {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            row-gap: 16px;
+            column-gap: 30px;
+        }
+    }
+    &__item {
+        @include flexcenter;
+        align-items: normal;
+        @include min-width('mac') {
+            width: 320px;
+        }
+    }
+    &__img {
+        border-radius: 9.005px;
+        background-color: $text-title-followUs;
+    }
+    &__desc {
+        @include flexcenter;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+    &__date {
+        @include font(10px, 600, 10px);
+        text-transform: uppercase;
+        opacity: 0.5;
+        margin-bottom: 10px;
+    }
+    &__title {
+        @include font(20px, 600, 20px);
+        text-transform: uppercase;
+    
+        &--italic {
+            @include font(20px, 700, 20px);
+            font-style: italic;
+        }
+    }
+    &-read-more {
+        &__link {
+        margin-top: auto;
+        @include flexcenter;
+        align-items: flex-start;
+        gap: 4px;
+        @include font(12px, 600, 12px);
+        text-transform: uppercase;
+        @include transition;
+            &:hover,
+            &:focus {
+                opacity: 70%;
+            }
+
+            &:hover svg,
+            &:focus svg {
+                rotate: 0deg;
+                opacity: 70%;
+            }
+        }
+        &__icon {
+            @include transition;
+            width: 16px;
+            height: 16px;
+            fill: $main-icon-color;
+            rotate: 45deg;
+        }
+    }
+}
+

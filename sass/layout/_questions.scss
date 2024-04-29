@@ -1,0 +1,174 @@
+.questions {
+    &__base {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            transform: translateY(12%);
+            display: block;
+            inset: 0;
+            background-image: image-set('/images/questions/any-question-img.png' 1x, '/images/questions/any-question-img@2.png' 2x);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+
+            @include min-width('mac') {
+                transform: translateY(12%);
+                background-image: image-set('/images/questions/any-question-img-desc.png' 1x, '/images/questions/any-question-img-desc@2.png' 2x);
+                background-position: right top;
+                background-size: contain;
+            }
+        }
+    }
+    
+    &__title {
+        display: inline-block;
+        @include font(36px, 600, 36px);
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        @include min-width('mac') {
+            @include font(62px, 600, 62px);
+            letter-spacing: -1.86px;
+        }
+    }
+    &__list {
+        @include min-width('mac') {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: normal;
+        }
+        &-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 999px;
+            padding: 10px;
+            background-color: $main-icon-color;
+            margin-bottom: 20px;
+            &-black {
+                background-color: $text-title-followUs;
+            }
+        }
+        &-wrapper {
+            @include flexcenter;
+            justify-content: space-between;
+            width: 220px;
+            border-radius: 45px;
+            background-color: $text-title-followUs;
+            padding: 8px 3px 8px 16px;
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+            &--contact {
+                width: 161px;
+                gap: 10px;
+                background-color: $main-icon-color;
+                padding: 10px 16px;
+                @include transition;
+                &:hover,
+                &:focus,
+                &:hover svg,
+                &:focus svg {
+                    opacity: 70%;
+                }
+                &:hover svg,
+                &:focus svg {
+                    rotate: 0deg;
+                }
+            
+                @include min-width('mac') {
+                    margin-top: auto;
+                }
+            }
+        }
+        &-name {
+            @include font(18px, 600, 18px);
+            text-transform: uppercase;
+            &--black {
+                color: $text-title-followUs;
+            }
+        }
+        &-link {
+            @include flexcenter;
+            border-radius: 99px;
+            background-color: $main-icon-color;
+            width: 42px;
+            height: 42px;
+            padding: 9px;
+            @include transition(opacity);
+            &:hover,
+            &:focus,
+            &:hover svg,
+            &:focus svg {
+                opacity: 70%;
+            }
+            &--contact {
+                width: 28px;
+                height: 28px;
+                background-color: $text-title-followUs;
+            }
+        }
+        &-wrapper--withoutPadding {
+            display: block;
+            width: 182px;
+            padding: 3px;
+            @include min-width('mac') {
+                margin-top: auto;
+            }
+        }
+    }
+    &__list-item {
+        width: 100%;
+        border-radius: 12px;
+        padding: 24px;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+            @include min-width('mac') {
+                margin-bottom: 0;
+            }
+        }
+        &-yellow {
+            background-color: $accent-color;
+        }
+        &-red {
+            background-color: $bgd-color-red;
+        
+            @include min-width('mac') {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &-orange {
+            background-color: $bgd-color-orange;
+        
+            @include min-width('mac') {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    &__list-text {
+        @include font(32px, 500, 32px);
+        text-transform: uppercase;
+        color: $text-white;
+        margin-bottom: 20px;
+        &-black {
+            color: $text-title-followUs;
+        }
+    }
+    &-contact__list {
+        @include flexcenter;
+        gap: 4px;
+        &--spaceBetween {
+            justify-content: space-between;
+        }
+    }
+    &-contact__icon {
+        @include transition(opacity);
+        fill: $text-title-followUs;
+        &--position {
+            fill: $main-icon-color;
+            @include transition;
+            rotate: 90deg;
+        }
+    }
+}    

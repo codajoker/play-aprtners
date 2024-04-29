@@ -1,0 +1,48 @@
+.follow-us {
+    position: relative;
+    z-index: 1;
+}
+
+.follow-us__wrap {
+    padding: 24px;
+    background-color: $accent-color;
+    border-radius: 12px;
+    @include min-width("mac") {
+        @include flexcenter;
+        justify-content: space-between;
+    }
+}
+.follow-us__title {
+    @include font(36px, 600, 36px);
+    letter-spacing: -1.08px;
+    text-transform: uppercase;
+    color: $text-title-followUs;
+    margin-bottom: 48px;
+    @include min-width("mac") {
+        @include font(52px, 600, 52px);
+        letter-spacing: -1.56px;
+        margin-bottom: 0;
+    }
+}
+.follow-us__list {
+    @include flexcenter;
+    justify-content: space-between;
+    @include min-width("mac") {
+        gap: 24px;
+    }
+    
+}
+.follow-us__link {
+    @include transition(opacity);
+    &:hover svg,
+    &:focus svg {
+        opacity: 70%;
+    }
+}
+.follow-us__icon {
+    @include transition(opacity);
+    @include min-width("mac") {
+        width: 68px;
+        height: 68px;
+    }
+}

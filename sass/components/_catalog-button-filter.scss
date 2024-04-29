@@ -1,0 +1,32 @@
+.button-filter {
+    &__list {
+        @include flexcenter;
+        justify-content: space-between;
+        border-radius: 32px;
+        padding: 8px;
+        margin-bottom: 27px;
+        @include min-width('mac') {
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__button {
+        @include font(16px, 600, 16px);
+        @include flexcenter;
+        display: inline-flex;
+        text-transform: uppercase;
+        border-radius: 32px;
+        padding: 16px 12px;
+        color: $text-white;
+        &--active {
+            background-color: $bgd-color-orange;
+            color: $text-title-followUs;
+        }
+        @include min-width('mac') {
+            @include font(24px, 600, 24px);
+        }
+    }
+
+}

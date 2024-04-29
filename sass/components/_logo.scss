@@ -1,0 +1,7 @@
+.logo {
+    @include flexcenter;
+    @include font(20px, 500, 20px);
+    width: 192px;
+    gap: 13px;
+    text-transform: uppercase;
+}

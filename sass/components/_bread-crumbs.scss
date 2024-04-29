@@ -1,0 +1,37 @@
+.bread-crumbs {
+    padding-top: 22px;
+    padding-bottom: 24px;
+    @include min-width('mac') {
+        padding-top: 16px;
+    }
+    &__list{
+        @include flexcenter;
+        justify-content: flex-start;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+    &__link {
+        @include flexcenter;
+        @include font(15px, 400, 15px);
+        gap: 8px;
+        opacity: 0.4;
+        &--active {
+            opacity: 1;
+        }
+        &--back {
+            text-transform: uppercase;
+            @include font(18px, 600, 18px);
+            justify-content: flex-start;
+            opacity: 1;
+        }
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+        &--size {
+            width: 6px;
+            height: 12px;
+            margin-right: 8px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+<svg class="social__icon" width="22.8px" height="22.8px">
+    <use
+    xlink:href="./images/icon/icon-sprites.svg#instagram"
+    ></use>
+</svg>
+
+<div class="benefits__sublist-wrap-icon">
+    <svg class="benefits__sublist-icon">
+        <use
+            href="./images/icon/icon-sprites.svg#arrow"
+        ></use>
+    </svg>
+</div>
+
+@include min-width('mac') {
+    @include transition;
+    @include flexcenter;
+    @include font(32px, 700, 32px);
+}
+
+ @include transition(opacity);
+    &:hover, &:focus {
+        opacity: 70%;
+    }
+    @include transition(opacity);
+        &:hover,
+        &:focus,
+        &:hover svg,
+        &:focus svg {
+            opacity: 70%;
+        }
+
+<section class="acknowledgment__section">
+    <div class="container">
+        <div class="inter-def__gap-wrap">
+            <h2 class="inter-def__subtitle">Interpretation</h2>
+            <p class="inter-def__text">
+                The words of which the initial letter is capitalized have
+                meanings defined under the following conditions. The following
+                definitions shall have the same meaning regardless of whether
+                they appear in singular or in plural.
+            </p>
+        </div>
+    </div>
+</section>

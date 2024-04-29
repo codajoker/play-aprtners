@@ -1,0 +1,78 @@
+.footer {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.footer__wrap {
+    @include flexcenter;
+    flex-direction: column;
+}
+
+.footer__logo {
+    margin-bottom: 15px;
+    @include transition(opacity);
+    &:hover,
+    &:focus {
+        opacity: 70%;
+    }
+}
+
+.footer__terms {
+    @include font(16px, 500, 16px);
+    color: $text-privacy;
+    margin-bottom: 25px;
+    @include transition(opacity);
+    &:hover, 
+    &:focus {
+        opacity: 70%;
+    }
+}
+
+.footer__list {
+    @include flexcenter;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.footer__list-link {
+    @include flexcenter;
+    @include transition(opacity);
+    &:hover svg,
+    &:focus svg {
+        opacity: 70%;
+    }
+    
+}
+
+.footer__list-link-bgd {
+    background-color: $main-icon-color;
+}
+
+// ! social__icon
+.social__icon {
+    @include transition(opacity);
+    fill: $main-icon-color;
+}
+
+.social__icon-linkedin {
+    fill: $background-main-color
+}
+
+.social__icon-instagram {
+    stroke: $background-main-color;
+}
+
+.footer__copy {
+    @include font(12px, 500, 12px);
+    color: $text-privacy;
+}
+
+.footer__conditions {
+    &-list {
+        display: flex;
+        margin-bottom: 25px;
+    }
+    &-text {
+        @include font(16px, 500, 16px)
+    }
+}

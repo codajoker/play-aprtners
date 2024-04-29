@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play.Partners</title>
+    <link rel="shortcut icon" href="/favicon/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/general-sans.css" />
+    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
+    <link rel="stylesheet" href="/dist/css/main.min.css" />
+  </head>
+  <body>
+    <div class="main__container">
+      <!-- header -->
+      <header class="header secondary-header" id="js-header">
+        <div class="container">
+          <nav class="header__nav">
+            <!-- Burger-menu-btn -->
+            <button
+              type="button"
+              class="header__button menu-btn secondary-header__button-burger"
+              id="js-open-menu"
+            >
+              <svg class="header__button__icon">
+                <use
+                  xlink:href="./images/icon/icon-sprites.svg#burger-icon"
+                ></use>
+              </svg>
+            </button>
+            <!-- MENU-btn -->
+            <button
+              type="button"
+              class="header__button-menu secondary-header__btn-menu"
+              id="js-open-menu-text"
+            >
+              MENU
+            </button>
+            <ul class="nav__list js-menu-container secondary-header__list">
+              <li class="nav__item">
+                <a href="index.html#about" class="nav__link mobile-menu__link"
+                  >ABOUT
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="index.html#benefits"
+                  class="nav__link mobile-menu__link"
+                  >BENEFITS
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="index.html#testimonials"
+                  class="nav__link mobile-menu__link"
+                  >TESTIMONIALS
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <button
+                  type="button"
+                  class="nav__link mobile-menu__link"
+                  id="js-event-btn"
+                >
+                  EVENTS
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="nav__item">
+                <a href="index.html#team" class="nav__link mobile-menu__link"
+                  >TEAM
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="index.html#blog" class="nav__link mobile-menu__link"
+                  >BLOG
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="index.html#faq" class="nav__link mobile-menu__link"
+                  >FAQ
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="index.html#contacts"
+                  class="nav__link mobile-menu__link"
+                  >CONTACTS
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="header__authorization secondary-header__authorization">
+              <a class="header__link header__link--login" href="#">LOG IN</a>
+              <div class="header__link--wrapper">
+                <a
+                  class="header__link header__link--register"
+                  href="index.html#"
+                  >REGISTER
+                  <div class="header__link--decor">
+                    <svg class="register-btn__icon">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#arrow"
+                      ></use>
+                    </svg></div
+                ></a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- main -->
+      <main class="main">
+        <!-- bread-crumbs -->
+        <div class="bread-crumbs">
+          <div class="container">
+            <ul class="bread-crumbs__list">
+              <li class="bread-crumbs__item">
+                <a href="index.html" class="bread-crumbs__link">
+                  <svg class="bread-crumbs__icon">
+                    <use xlink:href="./images/icon/icon-sprites.svg#home"></use>
+                  </svg>
+                  Play
+                </a>
+              </li>
+              <li class="bread-crumbs__item">
+                <a
+                  href="/"
+                  class="bread-crumbs__link bread-crumbs__link--active"
+                >
+                  <svg class="bread-crumbs__icon bread-crumbs__icon--size">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#vector-right-thin"
+                    ></use>
+                  </svg>
+                  Blog
+                </a>
+              </li>
+            </ul>
+            <!-- Back to MAIN PAGE -->
+            <a href="/" class="bread-crumbs__link bread-crumbs__link--back">
+              <svg class="bread-crumbs__icon">
+                <use
+                  xlink:href="./images/icon/icon-sprites.svg#vector-left-thick"
+                ></use>
+              </svg>
+              Back to MAIN PAGE
+            </a>
+          </div>
+        </div>
+        <!-- section catalog-hero -->
+        <section class="catalog-hero">
+          <div class="container">
+            <div class="catalog-hero__cover">
+              <div class="catalog-hero-img__wrap">
+                <img
+                  class="catalog-hero-img"
+                  src="/images/bgd_hero/img.jpg"
+                  alt="brand"
+                />
+              </div>
+              <!-- text-content & read more -->
+              <div class="catalog-hero-text__wrap">
+                <p class="catalog-hero-text__date">24 November, 2024</p>
+                <h1 class="catalog-hero-text__title">
+                  WOWBUB,
+                  <span class="catalog-hero-text__title--italic"
+                    >NEWBUNDLE</span
+                  >
+                </h1>
+                <p class="catalog-hero-text__subtitle">
+                  We are a team of professionals who spent years in the
+                  affiliate marketing and gambling field, so we have a deep
+                  understanding of the product and methods that really work. We
+                  are a team of professionals who spent years in the affiliate
+                  marketing and gambling field, so we have a deep understanding
+                  of the product and methods that really work. We are a team of
+                  professionals who spent years in the affiliate marketing and
+                  gambling field, so we have a deep understanding of the product
+                  and methods that really work.
+                </p>
+                <!-- read more -->
+                <a href="blog-post.html" class="read-more__link">
+                  READ MORE
+                  <svg class="read-more__icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section news -->
+        <section class="catalog-news catalog-news--padding">
+          <div class="container">
+            <div class="catalog-news__wrap">
+              <!-- button-filter -->
+              <ul class="button-filter__list">
+                <li class="button-filter__item">
+                  <button
+                    type="button"
+                    class="button-filter__button button-filter__button--active"
+                  >
+                    News
+                  </button>
+                </li>
+                <li class="button-filter__item">
+                  <button type="button" class="button-filter__button">
+                    ARTICLES
+                  </button>
+                </li>
+                <li class="button-filter__item">
+                  <button type="button" class="button-filter__button">
+                    RESOURCES
+                  </button>
+                </li>
+              </ul>
+              <!-- news list -->
+              <ul class="catalog-news__list">
+                <li class="catalog-news__item">
+                  <img
+                    class="catalog-news__img"
+                    src="./images/mobile/blog1.jpg"
+                    alt="img"
+                  />
+                  <div class="catalog-news__desc">
+                    <p class="catalog-news__date">24 November, 2024</p>
+                    <h2 class="catalog-news__title">
+                      WOWBUB,
+                      <span class="catalog-news__title--italic">NEWBUNDLE</span>
+                    </h2>
+                    <a href="/" class="catalog-news-read-more__link">
+                      READ MORE
+                      <svg class="catalog-news-read-more__icon">
+                        <use
+                          xlink:href="./images/icon/icon-sprites.svg#arrow"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="catalog-news__item">
+                  <img
+                    class="catalog-news__img"
+                    src="./images/mobile/blog2.jpg"
+                    alt="img"
+                  />
+                  <div class="catalog-news__desc">
+                    <p class="catalog-news__date">24 November, 2024</p>
+                    <h2 class="catalog-news__title">
+                      WOWBUB,
+                      <span class="catalog-news__title--italic">NEWBUNDLE</span>
+                    </h2>
+                    <a href="/" class="catalog-news-read-more__link">
+                      READ MORE
+                      <svg class="catalog-news-read-more__icon">
+                        <use
+                          xlink:href="./images/icon/icon-sprites.svg#arrow"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="catalog-news__item">
+                  <img
+                    class="catalog-news__img"
+                    src="./images/mobile/blog1.jpg"
+                    alt="img"
+                  />
+                  <div class="catalog-news__desc">
+                    <p class="catalog-news__date">24 November, 2024</p>
+                    <h2 class="catalog-news__title">
+                      WOWBUB,
+                      <span class="catalog-news__title--italic">NEWBUNDLE</span>
+                    </h2>
+                    <a href="/" class="catalog-news-read-more__link">
+                      READ MORE
+                      <svg class="catalog-news-read-more__icon">
+                        <use
+                          xlink:href="./images/icon/icon-sprites.svg#arrow"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="catalog-news__item">
+                  <img
+                    class="catalog-news__img"
+                    src="./images/mobile/blog2.jpg"
+                    alt="img"
+                  />
+                  <div class="catalog-news__desc">
+                    <p class="catalog-news__date">24 November, 2024</p>
+                    <h2 class="catalog-news__title">
+                      WOWBUB,
+                      <span class="catalog-news__title--italic">NEWBUNDLE</span>
+                    </h2>
+                    <a href="/" class="catalog-news-read-more__link">
+                      READ MORE
+                      <svg class="catalog-news-read-more__icon">
+                        <use
+                          xlink:href="./images/icon/icon-sprites.svg#arrow"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="catalog-news__item">
+                  <img
+                    class="catalog-news__img"
+                    src="./images/mobile/blog1.jpg"
+                    alt="img"
+                  />
+                  <div class="catalog-news__desc">
+                    <p class="catalog-news__date">24 November, 2024</p>
+                    <h2 class="catalog-news__title">
+                      WOWBUB,
+                      <span class="catalog-news__title--italic">NEWBUNDLE</span>
+                    </h2>
+                    <a href="/" class="catalog-news-read-more__link">
+                      READ MORE
+                      <svg class="catalog-news-read-more__icon">
+                        <use
+                          xlink:href="./images/icon/icon-sprites.svg#arrow"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="catalog-news__item">
+                  <img
+                    class="catalog-news__img"
+                    src="./images/mobile/blog2.jpg"
+                    alt="img"
+                  />
+                  <div class="catalog-news__desc">
+                    <p class="catalog-news__date">24 November, 2024</p>
+                    <h2 class="catalog-news__title">
+                      WOWBUB,
+                      <span class="catalog-news__title--italic">NEWBUNDLE</span>
+                    </h2>
+                    <a href="/" class="catalog-news-read-more__link">
+                      READ MORE
+                      <svg class="catalog-news-read-more__icon">
+                        <use
+                          xlink:href="./images/icon/icon-sprites.svg#arrow"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="catalog-news__item">
+                  <img
+                    class="catalog-news__img"
+                    src="./images/mobile/blog1.jpg"
+                    alt="img"
+                  />
+                  <div class="catalog-news__desc">
+                    <p class="catalog-news__date">24 November, 2024</p>
+                    <h2 class="catalog-news__title">
+                      WOWBUB,
+                      <span class="catalog-news__title--italic">NEWBUNDLE</span>
+                    </h2>
+                    <a href="/" class="catalog-news-read-more__link">
+                      READ MORE
+                      <svg class="catalog-news-read-more__icon">
+                        <use
+                          xlink:href="./images/icon/icon-sprites.svg#arrow"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="catalog-news__item">
+                  <img
+                    class="catalog-news__img"
+                    src="./images/mobile/blog2.jpg"
+                    alt="img"
+                  />
+                  <div class="catalog-news__desc">
+                    <p class="catalog-news__date">24 November, 2024</p>
+                    <h2 class="catalog-news__title">
+                      WOWBUB,
+                      <span class="catalog-news__title--italic">NEWBUNDLE</span>
+                    </h2>
+                    <a href="/" class="catalog-news-read-more__link">
+                      READ MORE
+                      <svg class="catalog-news-read-more__icon">
+                        <use
+                          xlink:href="./images/icon/icon-sprites.svg#arrow"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="catalog-news__item">
+                  <img
+                    class="catalog-news__img"
+                    src="./images/mobile/blog1.jpg"
+                    alt="img"
+                  />
+                  <div class="catalog-news__desc">
+                    <p class="catalog-news__date">24 November, 2024</p>
+                    <h2 class="catalog-news__title">
+                      WOWBUB,
+                      <span class="catalog-news__title--italic">NEWBUNDLE</span>
+                    </h2>
+                    <a href="/" class="catalog-news-read-more__link">
+                      READ MORE
+                      <svg class="catalog-news-read-more__icon">
+                        <use
+                          xlink:href="./images/icon/icon-sprites.svg#arrow"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrap">
+            <a class="logo footer__logo" href="/">
+              <img
+                src="./images/icon/logo-footer.svg"
+                alt="logo"
+              />PLAY.PARTNERS</a
+            >
+            <ul class="footer__conditions-list">
+              <li class="footer__conditions-item">
+                <a
+                  class="footer__terms"
+                  href="/conditionals.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Terms and conditions
+                </a>
+              </li>
+              <li class="footer__conditions-item">
+                <p class="footer__conditions-text">&nbsp; and &nbsp;</p>
+              </li>
+              <li class="footer__conditions-item">
+                <a
+                  class="footer__terms"
+                  href="/privacy-policy.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link footer__list-link-bgd" href="">
+                  <svg
+                    class="social__icon social__icon-linkedin"
+                    width="22.8px"
+                    height="22.8px"
+                  >
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="">
+                  <svg class="social__icon" width="22.8px" height="22.8px">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#telegram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="">
+                  <svg
+                    class="social__icon social__icon-instagram"
+                    width="22.8px"
+                    height="22.8px"
+                  >
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="footer__copy">
+              &#169;2024 Play.Partners. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Event modal -->
+    <div class="modal-event" id="js-modal-container">
+      <div class="event__section">
+        <div class="container">
+          <div class="event__wrapper">
+            <div class="event__wrap-content">
+              <ul class="event__wrap-content-list">
+                <li class="nav__item event__wrap-content-item">
+                  <a
+                    href="index.html#about"
+                    class="nav__link mobile-menu__link event__wrap-content-link"
+                    >ABOUT
+                    <svg class="nav__link-icon">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#arrow"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__item event__wrap-content-item">
+                  <a
+                    href="index.html#benefits"
+                    class="nav__link mobile-menu__link event__wrap-content-link"
+                    >BENEFITS
+                    <svg class="nav__link-icon">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#arrow"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__item event__wrap-content-item">
+                  <a
+                    href="index.html#testimonials"
+                    class="nav__link mobile-menu__link event__wrap-content-link"
+                    >TESTIMONIALS
+                    <svg class="nav__link-icon">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#arrow"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__item event__wrap-content-item">
+                  <a
+                    href="index.html#events"
+                    class="nav__link mobile-menu__link event__wrap-content-link"
+                    >EVENTS
+                    <svg class="nav__link-icon">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#arrow"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__item event__wrap-content-item">
+                  <a
+                    href="index.html#team"
+                    class="nav__link mobile-menu__link event__wrap-content-link"
+                    >TEAM
+                    <svg class="nav__link-icon">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#arrow"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__item event__wrap-content-item">
+                  <a
+                    href="index.html#blog"
+                    class="nav__link mobile-menu__link event__wrap-content-link"
+                    >BLOG
+                    <svg class="nav__link-icon">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#arrow"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__item event__wrap-content-item">
+                  <a
+                    href="index.html#faq"
+                    class="nav__link mobile-menu__link event__wrap-content-link"
+                    >FAQ
+                    <svg class="nav__link-icon">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#arrow"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav__item event__wrap-content-item">
+                  <a
+                    href="index.html#contacts"
+                    class="nav__link mobile-menu__link event__wrap-content-link"
+                    >CONTACTS
+                    <svg class="nav__link-icon">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#arrow"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <div class="event__wrap-content-right">
+                <div class="event__wrap-content-right-desc">
+                  <a href="" class="event__link">
+                    <svg class="event__link-icon" width="23px" height="30px">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#logo"
+                      ></use>
+                    </svg>
+                    PLAY.PARTNERS
+                  </a>
+                  <h2 class="follow-us__title event__title">Follow us</h2>
+
+                  <ul class="event__social-list">
+                    <li class="event__social-item">
+                      <a class="event__social-link footer__list-link" href="">
+                        <svg
+                          class="event__social-icon"
+                          width="32px"
+                          height="32px"
+                        >
+                          <use
+                            xlink:href="./images/icon/icon-sprites.svg#linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="event__social-item">
+                      <a class="event__social-link footer__list-link" href="">
+                        <svg
+                          class="event__social-icon"
+                          width="32px"
+                          height="32px"
+                        >
+                          <use
+                            xlink:href="./images/icon/icon-sprites.svg#telegram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="event__social-item">
+                      <a class="event__social-link footer__list-link" href="">
+                        <svg
+                          class="event__social-icon"
+                          width="32px"
+                          height="32px"
+                        >
+                          <use
+                            xlink:href="./images/icon/icon-sprites.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <img
+                  src="/images/event/event-section@2x.png"
+                  alt=""
+                  class="event__wrap-content-img"
+                />
+              </div>
+            </div>
+            <!-- terms -->
+            <div class="event__wrap-terms">
+              <ul class="event__wrap-list">
+                <li class="footer__conditions-item event__wrap-item">
+                  <a
+                    class="footer__terms event__wrap-link event__wrap-link--underline"
+                    href="/conditionals.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Terms and conditions
+                  </a>
+                </li>
+                <li class="footer__conditions-item event__wrap-item">
+                  <p class="footer__conditions-text event__wrap-link">
+                    &nbsp; and &nbsp;
+                  </p>
+                </li>
+                <li class="footer__conditions-item event__wrap-item">
+                  <a
+                    class="footer__terms event__wrap-link event__wrap-link--underline"
+                    href="/privacy-policy.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Privacy Policy</a
+                  >
+                </li>
+              </ul>
+              <p class="footer__copy event__wrap-copy">
+                &#169;2024 Play.Partners. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/js/modal-event.js"></script>
+    <!-- Burger-menu -->
+    <script type="module" src="/js/mobile-menu.js"></script>
+  </body>
+</html>

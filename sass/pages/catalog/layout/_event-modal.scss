@@ -1,0 +1,135 @@
+.event {
+    &__section {
+        background-color: $accent-color;
+        height: 840px;
+        padding-top: 120px;
+        padding-bottom: 32px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+   &__wrap-content{
+        display: flex;
+        &-list{
+            width: 320px;
+        }
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+        }
+        &-link{
+            border-bottom: 1px solid $text-title-followUs;
+            border-top: none;
+            padding-top: 0;
+            padding-bottom: 8px;
+        }
+
+        &-right{
+            width: 559px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: auto;
+            background-color: $text-title-followUs;
+            border-radius: 25px;
+            padding: 40px 20px 40px 40px;
+            &-desc {
+                height: 210px;
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+        &-img{
+            width: 247px;
+            height: 310px;
+        }
+   }
+
+   &__link{
+    @include flexcenter;
+    @include font(20px, 500, 20px);
+    gap: 13px;
+    text-transform: uppercase;
+    color: $accent-color;
+    margin-bottom: 16px;
+   }
+
+   &__title {
+    @include font(32px, 600, 32px);
+    letter-spacing: -0.96px;
+    color: $accent-color;
+   }
+
+   &__social{
+    &-list{
+        margin-top: auto;
+        @include flexcenter;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+    &-link{
+        background-color: $accent-color;
+        @include flexcenter;
+        display: inline-flex;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    &-icon{
+        @include min-width('mac') {
+            width: 32px;
+            height: 32px
+        }
+    }
+   }
+
+   &__wrap{
+        &-terms{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $text-title-followUs;
+        }
+        &-list{
+            display: flex;
+            align-items: baseline;
+        }
+        &-link{
+            font-size: 12px;
+            color: $text-title-followUs;
+            opacity: 0.5;
+            &--underline {
+                text-decoration: underline;
+            }
+        }
+        &-copy{
+            color: $text-title-followUs;
+            opacity: 0.5;
+        }
+   }
+
+}
+
+.modal-event {
+    display: none;
+    @include min-width('mac') {
+        display: block;
+        position: absolute;
+        top: -100%;
+        left: -100%
+    }
+}
+
+.modal-event.is-show {
+    @include min-width('mac') {
+        position: fixed;
+        inset: 0;
+    }
+    
+}

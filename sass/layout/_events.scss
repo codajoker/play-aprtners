@@ -1,0 +1,158 @@
+.events {
+    padding-bottom: 60px;
+    background-image: url("../../images/events/bgd/bgd.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    @include min-width('mac') {
+        background-image: url("../../images/events/bgd/bgd-desc.png");
+        background-position: bottom center;
+        background-size: contain;
+    }
+
+    &__main-wrap {
+        @include min-width('mac') {
+            display: grid;
+            grid-template-columns: 770px 370px;
+            grid-template-rows: repeat(2, auto);
+            margin-left: -30px;
+            margin-right: -40px;
+        }
+    }
+
+    &-section__title {
+        margin-bottom: 24px;
+        text-transform: uppercase;
+        @include min-width('mac') {
+            grid-column: span 2;
+            @include font(48px, 600, 48px);
+            margin-bottom: 90px;
+            padding-left: 30px;
+        }
+    }
+
+    &__wrapper {
+        border-radius: 25px;
+        background: linear-gradient(264deg, #FDC538 -8.48%, #F47F00 96.76%);
+        box-shadow: 0px 12px 44px 0px rgba(0, 0, 0, 0.40);
+        padding: 24px;
+        @include min-width('mac') {
+            @include flexcenter;
+            order: 2;
+            padding: 40px;
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border-radius: 17px;
+            border: 4px solid $bgd-color-testimonials;
+            background: rgba(255, 255, 255, 0.19);
+            padding: 21px 23px;
+            text-transform: uppercase;
+        }
+
+        &-title {
+            @include font(32px, 700, 32px);
+            color: $text-title-followUs;
+        }
+        &-description {
+            @include font(18px, 600, 18px);
+            color: $text-title-followUs;
+        }
+        
+    }
+}
+
+.events__event {
+    border-radius: 25px;
+    background-color: $bgd-color-testimonials;
+    box-shadow: 0px 12px 51.3px 0px #000;
+    padding: 24px;
+    @include min-width('mac') {
+        position: relative;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-first-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        @include min-width('mac') {
+            width: 326px;
+            gap: 48px;
+            justify-content: space-between;
+        }
+
+        &-img {
+            width: 138px;
+        }
+
+        &-title {
+            @include font(32px, 600, 32px);
+            text-transform: uppercase;
+            @include min-width('mac') {
+                @include font(48px, 600, 48px);
+            }
+        }
+
+        &-desc {
+            @include font(24px, 600, 24px);
+            @include min-width('mac') {
+                @include font(31px, 600, 31px);
+            }
+        }
+    }
+
+    &-icon {
+        @include min-width('mac') {
+            position: absolute;
+            width: 315px;
+            height: 326px;
+            padding-bottom: 32.6px;
+            left: 50%;
+            transform: translateX(-18%);
+        }
+    }
+    // second wrap
+    &-second-wrap {
+        @include min-width('mac') {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+        &-date {
+            @include font(24px, 500, 24px);
+            text-shadow: 0px 4px 13.4px #000;
+            margin-bottom: 8px;
+        }
+
+        &-location {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            @include font(24px, 500, 24px);
+            margin-bottom: 48px;
+            &--icon {
+                width: 18.5px;
+                height: 27px;
+            }
+        }
+
+        &-link {
+            width: 229px;
+            height: 48px;
+            @include flexcenter;
+            padding: 12.925px 0px;
+            background: linear-gradient(93deg, #F47F00 3.97%, #FCC538 95.97%);
+            border-radius: 25.85px;
+            @include font(15px, 500, 15px);
+            text-transform: uppercase;
+            color: $text-title-followUs;
+            margin-top: auto;
+        }
+    }
+    
+}

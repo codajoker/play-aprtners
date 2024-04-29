@@ -1,0 +1,96 @@
+.catalog-hero {
+    padding-top: 0;
+    @include min-width('mac') {
+        padding-bottom: 0;
+    }
+    &__cover {
+        @include min-width('mac') {
+            @include flexcenter;
+            justify-content: space-between;
+            gap: 30px;
+        }
+    }
+    &-img__wrap {
+        width: 100%;
+        background-color: $bgd-color-orange;
+        border-radius: 9.371px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 0;
+        margin-bottom: 30px;
+        @include min-width('mac') {
+            margin-bottom: 0;
+        }
+    }
+    &-img {
+        border-radius: 9.371px;
+        @include min-width('mac') {
+            width: 420px;
+            height: 420px;
+        }
+    }
+    &-text {
+        &__date {
+            @include font(15px, 600, 15px);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            opacity: 0.5;
+            @include min-width('mac') {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__title {
+            width: 216px;
+            opacity: 1;
+            @include font(32px, 600, 32px);
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            &--italic {
+                @include font(32px, 700, 32px);
+                font-style: italic;
+            }
+            @include min-width('mac') {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__subtitle {
+            height: 68px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 125%;
+            opacity: 0.5;
+            margin-bottom: 32px;
+            @include min-width('mac') {
+                height: auto;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.read-more {
+    &__link {
+        @include flexcenter;
+        display: inline-flex;
+        gap: 10px;
+        background-color: $bgd-color-orange;
+        border-radius: 32px;
+        @include font(18px, 600, 18px);
+        color: $text-title-followUs;
+        padding: 10px 16px;
+    }
+    &__icon {
+        @include flexcenter;
+        width: 28px;
+        height: 28px;
+        border-radius: 999px;
+        background-color: $text-title-followUs;
+        fill: $bgd-color-orange;
+        rotate: 45deg;
+    }
+}

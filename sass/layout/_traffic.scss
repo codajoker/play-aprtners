@@ -1,0 +1,72 @@
+.traffic {
+  padding-top: 60px;
+
+  &__wrap {
+    @include min-width('mac') {
+      height: 439px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    @include min-width('mac') {
+      @include font(42px, 600, 42px);
+    }
+  }
+  &__subtitle {
+    font-weight: 300;
+    font-size: 28px;
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+    @include min-width('mac') {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 402px;
+      height: 100%;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 40px;
+    @include min-width('mac') {
+      @include font(92px, 400, 92px);
+      width: 651px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: end;
+    @include min-width('mac') {
+      position: relative;
+      z-index: 1;
+      justify-content: space-between;
+      margin-top: auto;
+    }
+  }
+  &__button {
+    @include flexcenter;
+    margin-right: 24px;
+    background-color: #ff412a;
+    border-radius: 99px;
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    @include min-width('mac') {
+      width: 92px;
+      height: 92px;
+      margin-right: 0;
+    }
+    &__icon {
+      fill: $main-icon-color;
+      rotate: 45deg;
+    }
+  }
+  
+}

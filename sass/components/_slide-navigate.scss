@@ -1,0 +1,20 @@
+.slide-navigate {
+    &__list {
+        @include flexcenter;
+        gap: 24px;
+    }
+    &__button {
+        width: 70px;
+        height: 70px;
+        @include flexcenter;
+        gap: 10px;
+        border-radius: 99px;
+        background-color: $accent-color;
+        padding: 21.3px;
+        &-icon {
+            &--left {
+                rotate: 180deg;
+            }
+        }
+    }
+}

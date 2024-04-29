@@ -1,0 +1,73 @@
+.faq {
+    &__wrap {
+        @include min-width('mac') {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(2, auto);
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__img {
+            display: none;
+            @include min-width('mac') {
+                display: block;
+                grid-row: span 2;
+            }
+        }
+    }
+    &__title {
+        margin-bottom: 24px;
+        @include min-width('mac') {
+            @include font(48px, 600, 48px);
+            margin-bottom: 50px;
+        }
+    }
+    &__list {
+        @include flexcenter;
+        flex-direction: column;
+        gap: 24px;
+        @include min-width('mac') {
+            gap: 40px;
+        }
+        &-item{
+            width: 100%;
+        }
+        &-button {
+            cursor: pointer;
+            width: 100%;
+            @include flexcenter;
+            gap: 16px;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 125%;
+            color: $text-white;
+            text-align: start;
+            @include min-width('mac') {
+                font-size: 24px;
+            }
+        }
+        &-icon {
+            width: 32px;
+            height: 32px;
+        }
+        &-text {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 125%;
+            color: $text-descr;
+            padding-top: 16px;
+            @include min-width('mac') {
+                padding-top: 25px;
+            }
+        }
+    }
+}
+
+.accordionTitle+.accordionContent {
+    display: none;
+}
+
+.accordionTitle.is-open+.accordionContent {
+    display: block;
+}

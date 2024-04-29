@@ -1,0 +1,32 @@
+.about {
+  &__main-wrap {
+    @include min-width('mac') {
+      @include flexcenter;
+      gap: 40px;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    @include min-width('mac') {
+      @include font(48px, 600, 48px);
+      margin-bottom: 40px;
+    }
+  }
+  &__text {
+    font-size: 15px;
+    color: $text-descr;
+    margin-bottom: 40px;
+    @include min-width('mac') {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+  }
+  &__img {
+    @include min-width('mac') {
+      width: 500px;
+    }
+  }
+  padding-bottom: 0;
+}

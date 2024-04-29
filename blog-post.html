@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play.Partners</title>
+    <link rel="shortcut icon" href="/favicon/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/general-sans.css" />
+    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
+    <link rel="stylesheet" href="/dist/css/main.min.css" />
+  </head>
+  <body>
+    <div class="main__container">
+      <!-- header -->
+      <header class="header secondary-header">
+        <div class="container">
+          <nav class="header__nav">
+            <!-- Burger-menu-btn -->
+            <button
+              type="button"
+              class="header__button menu-btn secondary-header__button-burger"
+              id="js-open-menu"
+            >
+              <svg class="header__button__icon">
+                <use
+                  xlink:href="./images/icon/icon-sprites.svg#burger-icon"
+                ></use>
+              </svg>
+            </button>
+            <!-- MENU-btn -->
+            <button
+              type="button"
+              class="header__button-menu secondary-header__btn-menu"
+              id="js-open-menu-text"
+            >
+              MENU
+            </button>
+            <ul class="nav__list js-menu-container secondary-header__list">
+              <li class="nav__item">
+                <a href="index.html#about" class="nav__link mobile-menu__link"
+                  >ABOUT
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="index.html#benefits"
+                  class="nav__link mobile-menu__link"
+                  >BENEFITS
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="index.html#testimonials"
+                  class="nav__link mobile-menu__link"
+                  >TESTIMONIALS
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="index.html#events" class="nav__link mobile-menu__link"
+                  >EVENTS
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="index.html#team" class="nav__link mobile-menu__link"
+                  >TEAM
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="index.html#blog" class="nav__link mobile-menu__link"
+                  >BLOG
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="index.html#faq" class="nav__link mobile-menu__link"
+                  >FAQ
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="index.html#contacts"
+                  class="nav__link mobile-menu__link"
+                  >CONTACTS
+                  <svg class="nav__link-icon">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="header__authorization secondary-header__authorization">
+              <a class="header__link header__link--login" href="#">LOG IN</a>
+              <div class="header__link--wrapper">
+                <a
+                  class="header__link header__link--register"
+                  href="index.html#"
+                  >REGISTER
+                  <div class="header__link--decor">
+                    <svg class="register-btn__icon">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#arrow"
+                      ></use>
+                    </svg></div
+                ></a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- main -->
+      <main class="main">
+        <!-- bread-crumbs -->
+        <div class="bread-crumbs">
+          <div class="container">
+            <ul class="bread-crumbs__list">
+              <li class="bread-crumbs__item">
+                <a href="index.html" class="bread-crumbs__link">
+                  <svg class="bread-crumbs__icon">
+                    <use xlink:href="./images/icon/icon-sprites.svg#home"></use>
+                  </svg>
+                  Play
+                </a>
+              </li>
+              <li class="bread-crumbs__item">
+                <a href="/" class="bread-crumbs__link">
+                  <svg class="bread-crumbs__icon bread-crumbs__icon--size">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#vector-right-thin"
+                    ></use>
+                  </svg>
+                  Blog
+                </a>
+              </li>
+              <li class="bread-crumbs__item">
+                <a
+                  href="/"
+                  class="bread-crumbs__link bread-crumbs__link--active"
+                >
+                  <svg class="bread-crumbs__icon bread-crumbs__icon--size">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#vector-right-thin"
+                    ></use>
+                  </svg>
+                  Selected Blog Post
+                </a>
+              </li>
+            </ul>
+            <!-- Back to MAIN PAGE -->
+            <a href="/" class="bread-crumbs__link bread-crumbs__link--back">
+              <svg class="bread-crumbs__icon">
+                <use
+                  xlink:href="./images/icon/icon-sprites.svg#vector-left-thick"
+                ></use>
+              </svg>
+              BACK TO BLOG
+            </a>
+          </div>
+        </div>
+
+        <!-- section blog-hero -->
+        <section class="blog-hero__section blog__section">
+          <div class="container">
+            <div class="catalog-hero__cover blog-hero__cover">
+              <div class="catalog-hero-img__wrap blog-hero__img">
+                <img
+                  class="catalog-hero-img blog-hero__img--size"
+                  src="/images/bgd_hero/img.jpg"
+                  alt="brand"
+                />
+              </div>
+              <!-- text-content -->
+              <div class="catalog-hero-text__wrap">
+                <p class="catalog-hero-text__date">24 November, 2024</p>
+                <h1 class="catalog-hero-text__title">
+                  WOWBUB,
+                  <span class="catalog-hero-text__title--italic"
+                    >NEWBUNDLE</span
+                  >
+                </h1>
+                <p class="catalog-hero-text__subtitle blog-hero__text">
+                  We are a team of professionals who spent years in the
+                  affiliate marketing and gambling field, so we have a deep
+                  understanding of the product and methods that really work.
+                  <br />
+                  All articles for each section will be on one page, arranged
+                  one after another in a horizontal row. This will be similar to
+                  the way Instagram stories work. Most of the picture space is
+                  taken up by the article that comes first, followed by the next
+                  article on the side, then the next, and so on. A person
+                  scrolls the arrow to the side and can select the article they
+                  like.
+                  <br />
+                  <br />
+                  This principle of article placement applies to all sections of
+                  the blog.
+                  <br />
+                  <br />
+                  The design of the sections themselves repeats the above
+                  example. That is, in the center there is a large picture with
+                  the banner of the first article, and on the sides or slightly
+                  behind (as on the references) - text with the name of each
+                  section.
+                </p>
+              </div>
+            </div>
+            <!-- additional text -->
+            <p
+              class="catalog-hero-text__subtitle blog-hero__text blog-hero__text--additional"
+            >
+              We are a team of professionals who spent years in the affiliate
+              marketing and gambling field, so we have a deep understanding of
+              the product and methods that really work.
+              <br />
+              All articles for each section will be on one page, arranged one
+              after another in a horizontal row. This will be similar to the way
+              Instagram stories work. Most of the picture space is taken up by
+              the article that comes first, followed by the next article on the
+              side, then the next, and so on. A person scrolls the arrow to the
+              side and can select the article they like.
+              <br />
+              <br />
+              This principle of article placement applies to all sections of the
+              blog.
+              <br />
+              <br />
+              The design of the sections themselves repeats the above example.
+              That is, in the center there is a large picture with the banner of
+              the first article, and on the sides or slightly behind (as on the
+              references) - text with the name of each section.
+            </p>
+          </div>
+        </section>
+        <!-- Related pictures -->
+        <section class="blog-related-pictures__section blog__section">
+          <div class="container">
+            <!-- list pictures -->
+            <ul class="catalog-news__list blog-related-pictures__list">
+              <li class="catalog-news__item blog-related-pictures__item">
+                <img
+                  class="catalog-news__img blog-related-pictures__img"
+                  src="./images/mobile/blog1.jpg"
+                  alt="img"
+                />
+              </li>
+              <li class="catalog-news__item blog-related-pictures__item">
+                <img
+                  class="catalog-news__img blog-related-pictures__img"
+                  src="./images/mobile/blog1.jpg"
+                  alt="img"
+                />
+              </li>
+              <li class="catalog-news__item blog-related-pictures__item">
+                <img
+                  class="catalog-news__img blog-related-pictures__img"
+                  src="./images/mobile/blog1.jpg"
+                  alt="img"
+                />
+              </li>
+              <li class="catalog-news__item blog-related-pictures__item">
+                <img
+                  class="catalog-news__img blog-related-pictures__img"
+                  src="./images/mobile/blog1.jpg"
+                  alt="img"
+                />
+              </li>
+            </ul>
+            <h3 class="blog-related-pictures__title">Related pictures</h3>
+          </div>
+        </section>
+        <!-- Active section -->
+        <section class="blog-active__section blog__section">
+          <div class="container">
+            <p class="blog-active__desc blog-hero__text">
+              We are a team of professionals who spent years in the affiliate
+              marketing and gambling field, so we have a deep understanding of
+              the product and methods that really work. <br />
+              All articles for each section will be on one page, arranged one
+              after another in a horizontal row. This will be similar to the way
+              Instagram stories work. Most of the picture space is taken up by
+              the article that comes first, followed by the next article on the
+              side, then the next, and so on. A person scrolls the arrow to the
+              side and can select the article they like.
+            </p>
+            <div class="blog-active__main-wrap">
+              <p class="blog-active__title">Bullet Points List:</p>
+              <ul class="blog-active__list">
+                <li class="blog-active__item">
+                  <svg class="blog-active__icon">
+                    <use href="./images/icon/icon-sprites.svg#arrow"></use>
+                  </svg>
+                  <p class="blog-active__text">
+                    Exclusive and lucrative (without BL, for example) offers
+                    from direct advertisers
+                  </p>
+                </li>
+                <li class="blog-active__item">
+                  <svg class="blog-active__icon">
+                    <use href="./images/icon/icon-sprites.svg#arrow"></use>
+                  </svg>
+                  <p class="blog-active__text">
+                    Ability to work with different payment models: CPA, CPL,
+                    RevShare, Hybrid
+                  </p>
+                </li>
+                <li class="blog-active__item">
+                  <svg class="blog-active__icon">
+                    <use href="./images/icon/icon-sprites.svg#arrow"></use>
+                  </svg>
+                  <p class="blog-active__text">High rates</p>
+                </li>
+                <li class="blog-active__item">
+                  <svg class="blog-active__icon">
+                    <use href="./images/icon/icon-sprites.svg#arrow"></use>
+                  </svg>
+                  <p class="blog-active__text">
+                    Convenient payment schedule 2 times per month
+                  </p>
+                </li>
+                <li class="blog-active__item">
+                  <svg class="blog-active__icon">
+                    <use href="./images/icon/icon-sprites.svg#arrow"></use>
+                  </svg>
+                  <p class="blog-active__text">
+                    Personalized strategy tailored to your traffic and audience
+                    characteristics
+                  </p>
+                </li>
+              </ul>
+              <a class="blog-active__link read-more__link" href="http://">
+                RANDOM CTA</a
+              >
+            </div>
+          </div>
+        </section>
+        <!-- YOU ALSO MIGHT LIKE -->
+        <section class="blog-like__section">
+          <div class="container">
+            <h2 class="blog-like__title">YOU ALSO MIGHT LIKE</h2>
+            <!-- list -->
+            <ul class="catalog-news__list blog-like__list">
+              <li class="catalog-news__item blog-like__item">
+                <img
+                  class="catalog-news__img"
+                  src="./images/mobile/blog1.jpg"
+                  alt="img"
+                />
+                <div class="catalog-news__desc">
+                  <p class="catalog-news__date">24 November, 2024</p>
+                  <h2 class="catalog-news__title">
+                    WOWBUB,
+                    <span class="catalog-news__title--italic">NEWBUNDLE</span>
+                  </h2>
+                  <a href="/" class="catalog-news-read-more__link">
+                    READ MORE
+                    <svg class="catalog-news-read-more__icon">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#arrow"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <li class="catalog-news__item blog-like__item">
+                <img
+                  class="catalog-news__img"
+                  src="./images/mobile/blog1.jpg"
+                  alt="img"
+                />
+                <div class="catalog-news__desc">
+                  <p class="catalog-news__date">24 November, 2024</p>
+                  <h2 class="catalog-news__title">
+                    WOWBUB,
+                    <span class="catalog-news__title--italic">NEWBUNDLE</span>
+                  </h2>
+                  <a href="/" class="catalog-news-read-more__link">
+                    READ MORE
+                    <svg class="catalog-news-read-more__icon">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#arrow"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <li class="catalog-news__item blog-like__item">
+                <img
+                  class="catalog-news__img"
+                  src="./images/mobile/blog1.jpg"
+                  alt="img"
+                />
+                <div class="catalog-news__desc">
+                  <p class="catalog-news__date">24 November, 2024</p>
+                  <h2 class="catalog-news__title">
+                    WOWBUB,
+                    <span class="catalog-news__title--italic">NEWBUNDLE</span>
+                  </h2>
+                  <a href="/" class="catalog-news-read-more__link">
+                    READ MORE
+                    <svg class="catalog-news-read-more__icon">
+                      <use
+                        xlink:href="./images/icon/icon-sprites.svg#arrow"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrap">
+            <a class="logo footer__logo" href="/">
+              <img
+                src="./images/icon/logo-footer.svg"
+                alt="logo"
+              />PLAY.PARTNERS</a
+            >
+            <ul class="footer__conditions-list">
+              <li class="footer__conditions-item">
+                <a
+                  class="footer__terms"
+                  href="/conditionals.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Terms and conditions
+                </a>
+              </li>
+              <li class="footer__conditions-item">
+                <p class="footer__conditions-text">&nbsp; and &nbsp;</p>
+              </li>
+              <li class="footer__conditions-item">
+                <a
+                  class="footer__terms"
+                  href="/privacy-policy.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link footer__list-link-bgd" href="">
+                  <svg
+                    class="social__icon social__icon-linkedin"
+                    width="22.8px"
+                    height="22.8px"
+                  >
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="">
+                  <svg class="social__icon" width="22.8px" height="22.8px">
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#telegram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="">
+                  <svg
+                    class="social__icon social__icon-instagram"
+                    width="22.8px"
+                    height="22.8px"
+                  >
+                    <use
+                      xlink:href="./images/icon/icon-sprites.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="footer__copy">
+              &#169;2024 Play.Partners. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Burger-menu -->
+    <script type="module" src="/js/mobile-menu.js"></script>
+  </body>
+</html>
