@@ -69,6 +69,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      
+        @include transition(opacity);
+
+        &:hover,
+        &:focus,
+        &:hover svg,
+        &:focus svg {
+          opacity: 70%;
+        }
       &--first {
         margin-right: 4px;
       }

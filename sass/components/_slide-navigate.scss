@@ -11,6 +11,13 @@
         border-radius: 99px;
         background-color: $accent-color;
         padding: 21.3px;
+        @include transition;
+      
+        &:hover,
+        &:focus {
+            scale: 1.1;
+            opacity: 70%;
+        }
         &-icon {
             &--left {
                 rotate: 180deg;

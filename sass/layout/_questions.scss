@@ -2,18 +2,19 @@
     &__base {
         position: relative;
         &::after {
+            pointer-events: none;
             content: '';
             position: absolute;
             transform: translateY(12%);
             display: block;
             inset: 0;
-            background-image: image-set('/images/questions/any-question-img.png' 1x, '/images/questions/any-question-img@2.png' 2x);
+            background-image: image-set('../../images/questions/any-question-img.png' 1x, '../../images/questions/any-question-img@2.png' 2x);
             background-repeat: no-repeat;
             background-position: right bottom;
 
             @include min-width('mac') {
                 transform: translateY(12%);
-                background-image: image-set('/images/questions/any-question-img-desc.png' 1x, '/images/questions/any-question-img-desc@2.png' 2x);
+                background-image: image-set('../../images/questions/any-question-img-desc.png' 1x, '../../images/questions/any-question-img-desc@2.png' 2x);
                 background-position: right top;
                 background-size: contain;
             }

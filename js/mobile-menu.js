@@ -11,15 +11,19 @@ refs.menuBtn.addEventListener('click', openMenu);
 refs.modalLink.forEach(link => link.addEventListener('click', closeMenu));
 
 function openMenu(e) {
-  document.body.classList.add('bg-scrolling-element-when-mobile-open');
+  document.body.classList.toggle('bg-scrolling-element-when-mobile-open');
   refs.mobileMenu.classList.toggle('mobile-open');
   window.addEventListener('keydown', closeMenu);
-  document.body.insertAdjacentHTML("afterbegin", `<div class="backdrop"></div>`);
   window.document.body.addEventListener('click', closeMenu);
+  if (document.body.childNodes[0].className === "backdrop") {
+    return
+  }
+  document.body.insertAdjacentHTML("afterbegin", `<div class="backdrop"></div>`);
+  
 }
 
 function closeMenu(e) { 
-  if (e.code === 'Escape' || e.target === e.currentTarget || e.target.className === "backdrop"  ) {
+  if (e.code === 'Escape' || e.target === e.currentTarget || e.target.className === "backdrop") {
     refs.mobileMenu.classList.remove('mobile-open');
     document.body.classList.remove('bg-scrolling-element-when-mobile-open');
     window.removeEventListener('keydown', closeMenu);
