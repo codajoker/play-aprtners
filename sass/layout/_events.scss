@@ -6,7 +6,6 @@
     @include min-width('mac') {
         background-image: url("../../images/events/bgd/bgd-desc.png");
         background-position: bottom center;
-        background-size: contain;
     }
 
     &__main-wrap {

@@ -1,10 +1,24 @@
 .team {
     padding-top: 0;
     padding-bottom: 60px;
-    background-image: url("../../images/team/bgd/bg-gradient-team.png");
+    background-image: url('../../images/team/bgd/bg-gradient-team.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+    @include min-width('mac') {
+        position: relative;
+        background-image: none
+    }
+
+    &__bgd {
+        display: none;
+        @include min-width('mac') {
+            display: block;
+            position: absolute;
+            bottom: -63%;
+            z-index: -1;
+        }
+    }
 
     &__title {
         @include font(36px, 600, 36px);
@@ -86,6 +100,7 @@
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
     @include flexcenter;
     flex-direction: column;
     gap: 8px;

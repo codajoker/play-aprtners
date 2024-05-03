@@ -164,6 +164,8 @@
         }
     }
     &-contact__icon {
+        width: 24px;
+        height: 24px;
         @include transition(opacity);
         fill: $text-title-followUs;
         &--position {
@@ -173,3 +175,7 @@
         }
     }
 }    
+
+.link-telegram {
+    text-decoration: underline;
+}

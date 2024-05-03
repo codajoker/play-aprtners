@@ -52,6 +52,7 @@
                 font-style: italic;
             }
             @include min-width('mac') {
+                width: 530px;
                 margin-bottom: 30px;
             }
         }

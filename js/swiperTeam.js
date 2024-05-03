@@ -1,6 +1,12 @@
 const options = {
     autoplay: true,
-    initialSlide: 1,
+  initialSlide: 1,
+  // freeMode: true,
+  // noSwipingSelector: 'a',
+  // watchSlidesProgress: true,
+  // edgeSwipeDetection: true,
+  // touchReleaseOnEdges: true,
+  // preventClicks :true,
     centeredSlides: true,
     centeredSlidesBounds: true,
     centerInsufficientSlides: true,

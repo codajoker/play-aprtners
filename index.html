@@ -5,7 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Play.Partners</title>
-    <link rel="shortcut icon" href="./favicon/favicon.png" type="image/png" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -96,7 +127,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="#blog" class="nav__link mobile-menu__link"
+              <a href="./blog-post.html" class="nav__link mobile-menu__link"
                 >BLOG
                 <svg class="nav__link-icon">
                   <use xlink:href="./images/icon/icon-sprites.svg#arrow"></use>
@@ -121,9 +152,17 @@
             </li>
           </ul>
           <div class="header__authorization">
-            <a class="header__link header__link--login" href="#">LOG IN</a>
+            <a
+              target="_blank"
+              class="header__link header__link--login"
+              href="https://affiliates.play.partners/affiliates/en/auth/signin"
+              >LOG IN</a
+            >
             <div class="header__link--wrapper">
-              <a class="header__link header__link--register" href="#"
+              <a
+                target="_blank"
+                class="header__link header__link--register"
+                href="https://affiliates.play.partners/affiliates/en/auth/signup"
                 >REGISTER
                 <div class="header__link--decor">
                   <svg class="register-btn__icon">
@@ -149,17 +188,17 @@
               class="traffic__img"
               width="328"
               height="325"
-              src="./images/mobile/bg_img.png"
+              src="./images/traffic/bg_img-coin@2x.png"
               alt=""
             />
             <div class="traffic__wrapper">
-              <button class="traffic__button">
+              <a class="traffic__button" href="#benefits">
                 <svg class="traffic__button__icon">
                   <use
                     xlink:href="./images/icon/icon-sprites.svg#arrow-slide-btn"
                   ></use>
                 </svg>
-              </button>
+              </a>
               <p class="traffic__text">Where traffic turns into profit</p>
             </div>
           </div>
@@ -262,7 +301,7 @@
                 <p class="benefits__list-name">Nemanja</p>
                 <a
                   class="benefits__list-link benefits__list-link--first"
-                  href=""
+                  href="https://t.me/PlayPartnersNemo"
                 >
                   <svg
                     width="24"
@@ -277,7 +316,10 @@
                     />
                   </svg>
                 </a>
-                <a class="benefits__list-link" href="">
+                <a
+                  class="benefits__list-link"
+                  href="skype:live:.cid.75d9c16b70575fff"
+                >
                   <svg
                     width="24"
                     height="25"
@@ -298,7 +340,7 @@
                 <p class="benefits__list-name">Kate</p>
                 <a
                   class="benefits__list-link benefits__list-link--first"
-                  href=""
+                  href="https://t.me/kate_skm"
                 >
                   <svg
                     width="24"
@@ -313,7 +355,10 @@
                     />
                   </svg>
                 </a>
-                <a class="benefits__list-link" href="">
+                <a
+                  class="benefits__list-link"
+                  href="skype:live:.cid.e6bfdf4f41b3354e"
+                >
                   <svg
                     width="24"
                     height="25"
@@ -402,7 +447,10 @@
                 </li>
               </ul>
               <div class="benefits__list-manager">
-                <a class="benefits__list-link" href="">
+                <a
+                  class="benefits__list-link"
+                  href="https://t.me/play_partners"
+                >
                   <svg
                     width="24"
                     height="25"
@@ -416,7 +464,10 @@
                     />
                   </svg>
                 </a>
-                <a class="benefits__list-link" href="">
+                <a
+                  class="benefits__list-link"
+                  href="skype:live:.cid.c35054e36d54dfd1"
+                >
                   <svg
                     width="24"
                     height="25"
@@ -432,7 +483,10 @@
                     />
                   </svg>
                 </a>
-                <a class="benefits__list-link" href="">
+                <a
+                  class="benefits__list-link"
+                  href="mailto:office@play.partners"
+                >
                   <svg
                     width="28"
                     height="29"
@@ -634,7 +688,9 @@
                   </svg>
                   Warsaw, Poland
                 </p>
-                <a class="events__event-second-wrap-link" href="./"
+                <a
+                  class="events__event-second-wrap-link"
+                  href="https://t.me/play_partners "
                   >Make an appointment</a
                 >
               </div>
@@ -644,6 +700,11 @@
       </section>
       <!-- team -->
       <section class="team" id="team">
+        <img
+          class="team__bgd"
+          src="./images/team/bgd/bgd-team@2x.png"
+          alt="bgd"
+        />
         <div class="container">
           <div class="team__main-wrap">
             <h2 class="team__title title">TEAM</h2>
@@ -655,7 +716,7 @@
                   <img
                     class="team__list-img"
                     src="./images/team/Victoria/Victoria.jpg"
-                    srcset="/images/team/Victoria/Victoria@3x.jpg 2x"
+                    srcset="./images/team/Victoria/Victoria@3x.jpg 2x"
                     alt="Viktoria"
                     width="328px"
                   />
@@ -665,7 +726,10 @@
                     <!-- list-contact -->
                     <ul class="team__list-social">
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="mailto:victoria.m@play.partners"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#email"
@@ -682,7 +746,7 @@
                   <img
                     class="team__list-img"
                     src="./images/team/Nemaja/Nemaja.jpg"
-                    srcset="/images/team/Nemaja/Nemaja@3x.jpg 2x"
+                    srcset="./images/team/Nemaja/Nemaja@3x.jpg 2x"
                     alt="Viktoria"
                     width="328px"
                   />
@@ -692,7 +756,10 @@
                     <!-- list-contact -->
                     <ul class="team__list-social">
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="https://t.me/PlayPartnersNemo "
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#telegram"
@@ -701,7 +768,10 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="skype:live:.cid.75d9c16b70575fff"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#skype"
@@ -710,7 +780,10 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="mailto:nemanja.m@play.partners"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#email"
@@ -727,7 +800,7 @@
                   <img
                     class="team__list-img"
                     src="./images/team/Kate/Kate.jpg"
-                    srcset="/images/team/Kate/Kate@3x.jpg 2x"
+                    srcset="./images/team/Kate/Kate@3x.jpg 2x"
                     alt="Viktoria"
                     width="328px"
                   />
@@ -737,7 +810,10 @@
                     <!-- list-contact -->
                     <ul class="team__list-social">
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="https://t.me/kate_skm "
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#telegram"
@@ -746,7 +822,10 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="skype:live:.cid.e6bfdf4f41b3354e"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#skype"
@@ -755,7 +834,7 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a class="team__list-link" href="mailto:">
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#email"
@@ -772,7 +851,7 @@
                   <img
                     class="team__list-img"
                     src="./images/team/Valentin/Valentin.jpg"
-                    srcset="/images/team/Valentin/Valentin@3x.jpg 2x"
+                    srcset="./images/team/Valentin/Valentin@3x.jpg 2x"
                     alt="Viktoria"
                     width="328px"
                   />
@@ -782,7 +861,10 @@
                     <!-- list-contact -->
                     <ul class="team__list-social">
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="https://t.me/BlacklordUa"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#telegram"
@@ -791,7 +873,10 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="skype:live:blacklord765"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#skype"
@@ -800,7 +885,10 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="mailto:valentyn.che@play.partners"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#email"
@@ -817,7 +905,7 @@
                   <img
                     class="team__list-img"
                     src="./images/team/Molly/Molly.jpg"
-                    srcset="/images/team/Molly/Molly@3x.jpg 2x"
+                    srcset="./images/team/Molly/Molly@3x.jpg 2x"
                     alt="Viktoria"
                     width="328px"
                   />
@@ -827,7 +915,10 @@
                     <!-- list-contact -->
                     <ul class="team__list-social">
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="https://t.me/molly_playpartners"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#telegram"
@@ -836,7 +927,10 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="skype:live:.cid.44e2f464ca0fb019"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#skype"
@@ -845,7 +939,10 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="mailto:moldir.a@play.partners"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#email"
@@ -862,7 +959,7 @@
                   <img
                     class="team__list-img"
                     src="./images/team/Nikita/Nikita.jpg"
-                    srcset="/images/team/Nikita/Nikita@3x.jpg 2x"
+                    srcset="./images/team/Nikita/Nikita@3x.jpg 2x"
                     alt="Viktoria"
                     width="328px"
                   />
@@ -872,7 +969,10 @@
                     <!-- list-contact -->
                     <ul class="team__list-social">
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="https://t.me/nikita_playpartners "
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#telegram"
@@ -881,7 +981,10 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="skype:live:.cid.c0541a24ecb69593"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#skype"
@@ -890,7 +993,10 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="mailto:nikita.sh@play.partners"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#email"
@@ -907,7 +1013,7 @@
                   <img
                     class="team__list-img"
                     src="./images/team/Maria/Maria.jpg"
-                    srcset="/images/team/Maria/Maria@3x.jpg 2x"
+                    srcset="./images/team/Maria/Maria@3x.jpg 2x"
                     alt="Viktoria"
                     width="328px"
                   />
@@ -917,7 +1023,10 @@
                     <!-- list-contact -->
                     <ul class="team__list-social">
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="https://t.me/masha_playpartners"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#telegram"
@@ -926,7 +1035,10 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="skype:live:.cid.238a51ad53116c77"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#skype"
@@ -935,7 +1047,10 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="mailto:mariia.k@play.partners"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#email"
@@ -952,7 +1067,7 @@
                   <img
                     class="team__list-img"
                     src="./images/team/Margo/Margo.jpg"
-                    srcset="/images/team/Margo/Margo@3x.jpg 2x"
+                    srcset="./images/team/Margo/Margo@3x.jpg 2x"
                     alt="Viktoria"
                     width="328px"
                   />
@@ -962,7 +1077,7 @@
                     <!-- list-contact -->
                     <ul class="team__list-social">
                       <li>
-                        <a class="team__list-link" href="">
+                        <a class="team__list-link" href="https://t.me/margo_tm">
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#telegram"
@@ -971,7 +1086,10 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="skype:live:.cid.a47216e78e50933c"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#skype"
@@ -980,7 +1098,10 @@
                         </a>
                       </li>
                       <li>
-                        <a class="team__list-link" href="">
+                        <a
+                          class="team__list-link"
+                          href="mailto:marharyta.t@play.partners"
+                        >
                           <svg class="social__icon team__list-icon">
                             <use
                               xlink:href="./images/icon/icon-sprites.svg#email"
@@ -1146,14 +1267,15 @@
         </div>
       </section>
       <!-- faq -->
-      <section class="faq">
+      <section class="faq" id="faq">
         <div class="container">
           <div class="faq__wrap">
-            <img
+            <!-- <img
               class="faq__wrap__img"
               src="./images/descktope/FAQ/FAQ.png"
+              srcset="./images/faq/FAQ@2x.png"
               alt="FAQ"
-            />
+            /> -->
             <h2 class="faq__title title">FAQ</h2>
             <ul class="faq__list">
               <li class="faq__list-item accordionItem">
@@ -1303,8 +1425,15 @@
                 <p class="faq__list-text accordionContent">
                   Getting started with us as an advertiser is easy and will only
                   take a couple of minutes. Contact our advertisers managers on
-                  Telegram: ___________ with your enquiry and we will respond
-                  promptly to discuss all the details.
+                  Telegram:
+                  <a
+                    class="link-telegram"
+                    target="_blank"
+                    href="https://t.me/play_partners"
+                    >@play_partners</a
+                  >
+                  with your enquiry and we will respond promptly to discuss all
+                  the details.
                 </p>
               </li>
               <li class="faq__list-item accordionItem">
@@ -1396,7 +1525,7 @@
         </div>
       </section>
       <!-- questions -->
-      <section class="questions" id="faq">
+      <section class="questions">
         <div class="container questions__base">
           <h2 class="questions__title title">ANY QUESTIONS LEFT?</h2>
           <ul class="questions__list">
@@ -1413,7 +1542,10 @@
                 <p class="questions__list-name">Nemanja</p>
                 <ul class="questions-contact__list">
                   <li>
-                    <a class="questions__list-link" href="">
+                    <a
+                      class="questions__list-link"
+                      href="https://t.me/PlayPartnersNemo"
+                    >
                       <svg class="questions-contact__icon">
                         <use
                           xlink:href="./images/icon/icon-sprites.svg#telegram"
@@ -1422,7 +1554,10 @@
                     </a>
                   </li>
                   <li>
-                    <a class="questions__list-link" href="">
+                    <a
+                      class="questions__list-link"
+                      href="skype:live:.cid.75d9c16b70575fff"
+                    >
                       <svg class="questions-contact__icon">
                         <use
                           xlink:href="./images/icon/icon-sprites.svg#skype"
@@ -1436,7 +1571,10 @@
                 <p class="questions__list-name">Kate</p>
                 <ul class="questions-contact__list">
                   <li>
-                    <a class="questions__list-link" href="">
+                    <a
+                      class="questions__list-link"
+                      href="https://t.me/kate_skm"
+                    >
                       <svg class="questions-contact__icon">
                         <use
                           xlink:href="./images/icon/icon-sprites.svg#telegram"
@@ -1445,7 +1583,10 @@
                     </a>
                   </li>
                   <li>
-                    <a class="questions__list-link" href="">
+                    <a
+                      class="questions__list-link"
+                      href="skype:live:.cid.e6bfdf4f41b3354e"
+                    >
                       <svg class="questions-contact__icon">
                         <use
                           xlink:href="./images/icon/icon-sprites.svg#skype"
@@ -1470,7 +1611,10 @@
                   class="questions-contact__list questions-contact__list--spaceBetween"
                 >
                   <li>
-                    <a class="questions__list-link" href="">
+                    <a
+                      class="questions__list-link"
+                      href="https://t.me/play_partners"
+                    >
                       <svg class="questions-contact__icon">
                         <use
                           xlink:href="./images/icon/icon-sprites.svg#telegram"
@@ -1479,7 +1623,10 @@
                     </a>
                   </li>
                   <li>
-                    <a class="questions__list-link" href="">
+                    <a
+                      class="questions__list-link"
+                      href="skype:live:.cid.c35054e36d54dfd1"
+                    >
                       <svg class="questions-contact__icon">
                         <use
                           xlink:href="./images/icon/icon-sprites.svg#skype"
@@ -1488,7 +1635,10 @@
                     </a>
                   </li>
                   <li>
-                    <a class="questions__list-link" href="">
+                    <a
+                      class="questions__list-link"
+                      href="mailto:office@play.partners"
+                    >
                       <svg class="questions-contact__icon">
                         <use
                           xlink:href="./images/icon/icon-sprites.svg#email"
@@ -1514,7 +1664,7 @@
                 </p>
                 <a
                   class="questions__list-link questions__list-link--contact"
-                  href=""
+                  href="mailto:vladyslav.n@play.partners"
                 >
                   <svg
                     class="questions-contact__icon questions-contact__icon--position"
@@ -1536,7 +1686,10 @@
             <h2 class="follow-us__title">Follow us</h2>
             <ul class="follow-us__list">
               <li class="follow-us__list">
-                <a href="" class="follow-us__link">
+                <a
+                  href="https://www.linkedin.com/company/play-partners/"
+                  class="follow-us__link"
+                >
                   <svg class="follow-us__icon" width="42px" height="42px">
                     <use
                       xlink:href="./images/icon/icon-sprites.svg#linkedin"
@@ -1545,7 +1698,7 @@
                 </a>
               </li>
               <li class="follow-us__list">
-                <a href="" class="follow-us__link">
+                <a href="https://t.me/playpartners" class="follow-us__link">
                   <svg class="follow-us__icon" width="42px" height="42px">
                     <use
                       xlink:href="./images/icon/icon-sprites.svg#telegram"
@@ -1554,7 +1707,10 @@
                 </a>
               </li>
               <li class="follow-us__list">
-                <a href="" class="follow-us__link">
+                <a
+                  href="https://www.instagram.com/play.partners.network/"
+                  class="follow-us__link"
+                >
                   <svg class="follow-us__icon" width="42px" height="42px">
                     <use
                       xlink:href="./images/icon/icon-sprites.svg#instagram"
@@ -1603,7 +1759,10 @@
           </ul>
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a class="footer__list-link footer__list-link-bgd" href="">
+              <a
+                class="footer__list-link footer__list-link-bgd"
+                href="https://www.linkedin.com/company/play-partners/"
+              >
                 <svg
                   class="social__icon social__icon-linkedin"
                   width="22.8px"
@@ -1616,7 +1775,7 @@
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="">
+              <a class="footer__list-link" href="https://t.me/playpartners">
                 <svg class="social__icon" width="22.8px" height="22.8px">
                   <use
                     xlink:href="./images/icon/icon-sprites.svg#telegram"
@@ -1625,7 +1784,10 @@
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="">
+              <a
+                class="footer__list-link"
+                href="https://www.instagram.com/play.partners.network/"
+              >
                 <svg
                   class="social__icon social__icon-instagram"
                   width="22.8px"

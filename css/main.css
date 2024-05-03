@@ -797,7 +797,6 @@ button {
   .events {
     background-image: url("../../images/events/bgd/bgd-desc.png");
     background-position: bottom center;
-    background-size: contain;
   }
 }
 @media (min-width: 1200px) {
@@ -1017,6 +1016,23 @@ button {
   background-position: bottom;
   background-size: contain;
 }
+@media (min-width: 1200px) {
+  .team {
+    position: relative;
+    background-image: none;
+  }
+}
+.team__bgd {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .team__bgd {
+    display: block;
+    position: absolute;
+    bottom: -63%;
+    z-index: -1;
+  }
+}
 .team__title {
   font-size: 36px;
   font-weight: 600;
@@ -1100,6 +1116,7 @@ button {
   bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1290,6 +1307,8 @@ button {
   justify-content: space-between;
 }
 .questions-contact__icon {
+  width: 24px;
+  height: 24px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #070501;
 }
@@ -1297,6 +1316,10 @@ button {
   fill: #ffffff;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   rotate: 90deg;
+}
+
+.link-telegram {
+  text-decoration: underline;
 }
 
 .follow-us {
@@ -1450,20 +1473,15 @@ button {
 
 @media (min-width: 1200px) {
   .faq__wrap {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-.faq__wrap__img {
-  display: none;
-}
-@media (min-width: 1200px) {
-  .faq__wrap__img {
-    display: block;
-    grid-row: span 2;
+    height: 1000px;
+    position: relative;
+    background-image: url("../../images/faq/FAQ@2x.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 402px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 }
 .faq__title {
@@ -1471,6 +1489,8 @@ button {
 }
 @media (min-width: 1200px) {
   .faq__title {
+    width: 640px;
+    margin-left: auto;
     font-size: 48px;
     font-weight: 600;
     line-height: 1;
@@ -1486,6 +1506,11 @@ button {
 }
 @media (min-width: 1200px) {
   .faq__list {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 640px;
+    margin-left: auto;
     gap: 40px;
   }
 }
@@ -1701,6 +1726,7 @@ button {
 }
 @media (min-width: 1200px) {
   .catalog-hero-text__title {
+    width: 530px;
     margin-bottom: 30px;
   }
 }
