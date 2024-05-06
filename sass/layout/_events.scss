@@ -151,6 +151,10 @@
             text-transform: uppercase;
             color: $text-title-followUs;
             margin-top: auto;
+            @include min-width('mac') {
+                position: relative;
+                z-index: 3;
+            }
         }
     }
     

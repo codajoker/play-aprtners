@@ -967,6 +967,12 @@ button {
   color: #070501;
   margin-top: auto;
 }
+@media (min-width: 1200px) {
+  .events__event-second-wrap-link {
+    position: relative;
+    z-index: 3;
+  }
+}
 
 .about {
   padding-bottom: 0;
@@ -1056,6 +1062,10 @@ button {
   .team__list {
     margin-bottom: 40px;
   }
+}
+.team__list-icon {
+  width: 28px;
+  height: 28px;
 }
 .team__list-item {
   width: 328px;
