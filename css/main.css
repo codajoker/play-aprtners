@@ -298,6 +298,16 @@ button {
   z-index: 9999;
 }
 
+.common__list {
+  list-style: outside;
+  padding-left: 25px;
+}
+@media (min-width: 1200px) {
+  .common__list {
+    padding-left: 50px;
+  }
+}
+
 .benefits {
   padding-top: 60px;
 }
@@ -1563,12 +1573,11 @@ button {
   }
 }
 
-.accordionTitle + .accordionContent {
-  display: none;
-}
-
-.accordionTitle.is-open + .accordionContent {
-  display: block;
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 .footer {

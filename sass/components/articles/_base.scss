@@ -1,0 +1,7 @@
+.common__list {
+    list-style: outside;
+    padding-left: 25px;
+    @include min-width('mac') {
+        padding-left: 50px;
+    }
+}
