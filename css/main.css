@@ -1826,6 +1826,7 @@ button {
   }
 }
 .catalog-news__img {
+  width: 180px;
   border-radius: 9.005px;
   background-color: #070501;
 }
