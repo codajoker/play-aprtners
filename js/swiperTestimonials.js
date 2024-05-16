@@ -1,6 +1,6 @@
 const options = {
   autoplay: {
-    delay: 5000,
+    delay: 15000,
   },
   initialSlide: 1,
   effect: "coverflow",
